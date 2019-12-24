@@ -33,4 +33,21 @@ Nous allons maintenant directement programmer la puce Wifi :
 
 ![shunt](https://raw.githubusercontent.com/sebastienPoussard/BADUSB_Atmega32U4_ESP8266_FR/master/img/shunt.png)
 
-a suivre...
+- télécharger le fichier firmware [ici](https://github.com/sebastienPoussard/BADUSB_Atmega32U4_ESP8266_FR/raw/master/fichiers/esp8266_wifi_duck_4mb.bin)
+
+### Sous Windows
+- Download the NODEMCU Flasher tool [here](https://github.com/nodemcu/nodemcu-flasher/archive/master.zip)
+source of github project [here](https://github.com/nodemcu/nodemcu-flasher)
+- Dans config, selectionner à la premiere ligne le firmware téléchargé précédemment.
+
+![firmware](https://github.com/nodemcu/nodemcu-flasher/raw/master/Resources/Images/NodeMCU-Flasher-Setting.png)
+
+### Sous Linux
+
+```Bash
+python esptool.py --trace   --baud 150200 --port /dev/ttyACM0 write_flash 0x00000 <emplacement_esp8266_wifi_duck_4mb.bin> --flash_size 4MB --flash_mode dio --flash_freq 40m
+```
+à verifier
+
+1. Sous Windows : 
+
