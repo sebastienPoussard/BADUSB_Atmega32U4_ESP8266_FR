@@ -50,13 +50,13 @@ source du projet Github [ici](https://github.com/nodemcu/nodemcu-flasher)
 
 ### Sous Linux
 
-- Il vous faudra installer ESPTOOL pour flasher le firmware 
+- Il vous faudra installer ESPTOOL pour flasher le firmware (il vous faudra avoir installer Python et pip au préalable)
 ```Bash
 pip install –upgrade esptool
 ```
 - Vous pouvez maintenant lancer la commande suivante pour flasher le firmware, remplacer l'emplacement du fichier <emplacement_esp8266_wifi_duck_4mb.bin>  
 ```Bash
-python esptool.py --trace   --baud 150200 --port /dev/ttyACM0 write_flash 0x00000 <emplacement_esp8266_wifi_duck_4mb.bin> --flash_size 4MB --flash_mode dio --flash_freq 40m
+esptool --trace   --baud 150200 --port /dev/ttyACM0 write_flash 0x00000 <emplacement_esp8266_wifi_duck_4mb.bin> --flash_size 4MB --flash_mode dio --flash_freq 40m
 ```
 - Vous pouvez maintenant dessouder les 2 bornes ou bien arrếter de faire le court-circuit.
 à verifier
