@@ -10,7 +10,7 @@ Ce guide à pour vocation d'expliquer comment configurer les BAD-USB Atmega32U4 
 Le code à été récuperé à plusieurs endroits puis modifié pour supporter les claviers AZERTY
 
 # Arduino IDE
-Commencer par installer arduino IDE [Téléchargement](https://www.arduino.cc/en/main/software)
+Commencer par installer arduino IDE [Sur le site officiel](https://www.arduino.cc/en/main/software)
 Si vous utilisez Linux, il faudra desactiver le daemon ModemManager qui entre en conflit avec Arduino IDE (Cf. [lien](https://forum.sparkfun.com/viewtopic.php?t=46710))
 ```Bash
 sudo systemctl stop ModemManager.service
