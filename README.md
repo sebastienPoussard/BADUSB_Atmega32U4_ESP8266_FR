@@ -33,21 +33,34 @@ Nous allons maintenant directement programmer la puce Wifi :
 
 ![shunt](https://raw.githubusercontent.com/sebastienPoussard/BADUSB_Atmega32U4_ESP8266_FR/master/img/shunt.png)
 
-- télécharger le fichier firmware [ici](https://github.com/sebastienPoussard/BADUSB_Atmega32U4_ESP8266_FR/raw/master/fichiers/esp8266_wifi_duck_4mb.bin)
+- Télécharger le fichier firmware [ici](https://github.com/sebastienPoussard/BADUSB_Atmega32U4_ESP8266_FR/raw/master/fichiers/esp8266_wifi_duck_4mb.bin)
 
 ### Sous Windows
-- Download the NODEMCU Flasher tool [here](https://github.com/nodemcu/nodemcu-flasher/archive/master.zip)
-source of github project [here](https://github.com/nodemcu/nodemcu-flasher)
+- Télécharger l'outil NODEMCU-FLASHER [ici](https://github.com/nodemcu/nodemcu-flasher/archive/master.zip)
+source du projet Github [ici](https://github.com/nodemcu/nodemcu-flasher)
 - Dans config, selectionner à la premiere ligne le firmware téléchargé précédemment.
 
 ![firmware](https://github.com/nodemcu/nodemcu-flasher/raw/master/Resources/Images/NodeMCU-Flasher-Setting.png)
 
+- Enfin, selectionner le bon Port puis clicker sur Flasher
+
+![flash](https://raw.githubusercontent.com/nodemcu/nodemcu-flasher/master/Resources/Images/NodeMCU-Flasher-Begin.png)
+
+
+
 ### Sous Linux
 
+- Il vous faudra installer ESPTOOL pour flasher le firmware 
+```Bash
+pip install –upgrade esptool
+```
+- Vous pouvez maintenant lancer la commande suivante pour flasher le firmware, remplacer l'emplacement du fichier <emplacement_esp8266_wifi_duck_4mb.bin>  
 ```Bash
 python esptool.py --trace   --baud 150200 --port /dev/ttyACM0 write_flash 0x00000 <emplacement_esp8266_wifi_duck_4mb.bin> --flash_size 4MB --flash_mode dio --flash_freq 40m
 ```
+- Vous pouvez maintenant dessouder les 2 bornes ou bien arrếter de faire le court-circuit.
 à verifier
 
-1. Sous Windows : 
+# Flasher le programme Wifi Ducky
+
 
