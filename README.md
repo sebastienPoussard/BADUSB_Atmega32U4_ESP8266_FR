@@ -9,6 +9,16 @@ Ce guide à pour vocation d'expliquer comment configurer les BAD-USB Atmega32U4 
 
 Le code à été récuperé à plusieurs endroits puis modifié pour supporter les claviers AZERTY
 
+# Remerciements & sources
+
+[Le guide de Puckk en anglais](https://github.com/puckk/CJMCU-3212/blob/master/README.md)
+[L'issue #91 du Git spacehuhn/wifi_ducky](https://github.com/spacehuhn/wifi_ducky/issues/91)
+[git d'ODEMCU flasher pour windows](https://github.com/nodemcu/nodemcu-flasher)
+[La librairie KeyboardAzertyFr de martin-leo](https://github.com/martin-leo/KeyboardAzertyFr)
+[Les explication de nico78 sur la conversion en clavier Azerty](https://forum.arduino.cc/index.php?topic=552465.0)
+
+
+
 # Arduino IDE
 Commencer par installer arduino IDE [Sur le site officiel](https://www.arduino.cc/en/main/software)
 Si vous utilisez Linux, il faudra desactiver le daemon ModemManager qui entre en conflit avec Arduino IDE (Cf. [lien](https://forum.sparkfun.com/viewtopic.php?t=46710))
