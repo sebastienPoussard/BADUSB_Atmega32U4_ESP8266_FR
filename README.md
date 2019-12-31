@@ -11,10 +11,10 @@ Le code à été récuperé à plusieurs endroits puis modifié pour supporter l
 
 # Remerciements & sources
 
-[Le guide de Puckk en anglais](https://github.com/puckk/CJMCU-3212/blob/master/README.md)
-[L'issue #91 du Git spacehuhn/wifi_ducky](https://github.com/spacehuhn/wifi_ducky/issues/91)
-[git d'ODEMCU flasher pour windows](https://github.com/nodemcu/nodemcu-flasher)
-[La librairie KeyboardAzertyFr de martin-leo](https://github.com/martin-leo/KeyboardAzertyFr)
+[Le guide de Puckk en anglais](https://github.com/puckk/CJMCU-3212/blob/master/README.md)  
+[L'issue #91 du Git spacehuhn/wifi_ducky](https://github.com/spacehuhn/wifi_ducky/issues/91)  
+[git d'ODEMCU flasher pour windows](https://github.com/nodemcu/nodemcu-flasher)  
+[La librairie KeyboardAzertyFr de martin-leo](https://github.com/martin-leo/KeyboardAzertyFr)  
 [Les explication de nico78 sur la conversion en clavier Azerty](https://forum.arduino.cc/index.php?topic=552465.0)
 
 
